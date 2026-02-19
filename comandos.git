@@ -1,0 +1,53 @@
+
+1. Configure seu Git (Faça isso apenas na primeira vez):
+git config --global user.name "nome do usuario" "--Define o nome de quem está fazendo as modificações
+git config --global user.email "email do usuario" "--Define o email de quem está fazendo as modificações
+--------------------------------------------------------------------------------------------------------
+2. Clone o repositório da equipe (Faça isso apenas na primeira vez):
+git clone https://github.com/nome-do-seu-usuario/Looma-repositorio.git ""--Pega o seu repositório do git hub e traz os arquivos
+cd Looma-repositorio --joga vc na pasta do repositorio
+--------------------------------------------------------------------------------------------------------
+3. !IMPORTANTE! - SEMPRE CONFERIR SE VC ESTÁ NA VERSÃO MAIS RECENTE
+git pull origin "-- Atualiza para a versão mais RECENTE 
+git pull origin main "-- caso vc não esteja na branch main
+Se aparecer: "Already up to date." significa que vc já está na versão mais recente
+Sempre faça isso antes de começar a trabalhar!
+--------------------------------------------------------------------------------------------------------
+4. Crie uma nova branch para trabalhar em uma tarefa específica:
+git branch "nome da branch" "-- Cria uma nova branch
+git checkout "nome da branch que vc irá selecionar" "--Troca para a Branch que vc irá fazer as suas mudanças
+--------------------------------------------------------------------------------------------------------
+5. Edite seus arquivos normalmente no VS Code, faça as suas alterações no código e salve os arquivos
+--------------------------------------------------------------------------------------------------------
+6. Adicione os arquivos modificados para commit:
+git add . "--adiciona todos os arquivos do repositório na área de stage
+--------------------------------------------------------------------------------------------------------
+7. Faça o commit das mudanças com uma mensagem clara:
+git commit -m "nome do commit" --"Serve para salvar alguma mudança que você fez e colocar um título a ela
+--------------------------------------------------------------------------------------------------------
+8. Envie sua branch para o GitHub:
+git push origin "Nome da branch que será enviada" --"Envia a branch escolhida pro repositório do github
+--------------------------------------------------------------------------------------------------------
+9. Atualize seu repositório local com as mudanças da equipe:
+git checkout main "--Troca a branch que vc estava pela branch principal
+--------------------------------------------------------------------------------------------------------
+10. Mescla as atualizaçõs da sua branch com a branch main / principal:
+git merge "nome da branch que irá ser mesclada a main / branch que vc fez as alterações" --"para fazer isso vc já deve estar na branch main
+--------------------------------------------------------------------------------------------------------
+11. Enviando branch main / principlal (finalização)
+git push origin "Nome da branch que será enviada" "--Envia a branch escolhida pro repositório do github
+--------------------------------------------------------------------------------------------------------
+/Comandos para conferir alterações e ver a versão do código /
+git status "--mostra status dos arquivos
+git log "--ver as versões do projeto *apertar a tecla "q" depois*
+--------------------------------------------------------------------------------------------------------
+
+OPCIONAIS E ATALHOS
+cls: Limpar terminal
+git commit --amend -m "Nova mensagem do commit" -- Muda o nome do seu último commit
+git branch -m novo-nome -- renomear branch atual
+git branch -m nome-antigo novo-nome -- Para renomear a branch atual
+git branch -- mostra todas as branchs e a que vc está
+git reset --soft HEAD~1 -- Apaga o último commit, mas mantém as alterações no código
+git reset --hard HEAD~1 -- Apaga o último commit e também as alterações
+git branch -a --mostra todas as branch Remotas e Locais
